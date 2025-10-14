@@ -1,0 +1,28 @@
+# local package
+-e .
+
+# external requirements
+click>=8.0
+Sphinx>=5.0
+coverage>=6.0
+flake8>=5.0
+
+# Core ML dependencies
+pandas==1.5.3
+numpy==1.23.5
+scikit-learn==1.2.2
+imbalanced-learn==0.10.1
+joblib==1.2.0
+
+# BentoML (pinned to compatible version)
+bentoml==1.0.21
+
+# API and validation
+pydantic==1.10.7
+requests>=2.31.0
+PyJWT==2.7.0
+starlette==0.25.0
+uvicorn==0.22.0
+pytest==8.4.2
+httpx==0.28.1
+fastapi==0.93.0

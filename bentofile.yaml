@@ -1,0 +1,31 @@
+service: src.service8:svc
+# name: "adili-exam-service"
+include:
+  - src/**
+  - data/**
+  - requirements.txt
+
+exclude:
+  - tests/**
+  - .git/**
+  - __pycache__/**
+
+python:
+  packages:
+    - bentoml==1.0.21
+    - scikit-learn==1.2.2
+    - pandas==1.5.3
+    - numpy==1.23.5
+    - imbalanced-learn==0.10.1
+    - joblib==1.2.0
+    - pydantic==1.10.7
+    - requests>=2.31.0
+    - PyJWT==2.7.0
+    - setuptools==65.5.0  # to avoid compatibility issues with bentoml
+    - pytest==8.4.2
+    - httpx==0.28.1
+    - fastapi==0.93.0
+
+labels:
+  owner: "adili"
+  project: "admission_prediction_exam"
